@@ -13,6 +13,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,8 +34,19 @@
                 <li><a href="">Studio</a></li>
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">Contacts</a></li>
+            <ul class="list-nostyle nav-list">
+                <li><a href="">Studio</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contacts</a></li>
             </ul>
         </nav>
+        <address>
+            <ul class="list-nostyle info-list">
+                <li><a href="">info@devstudio.com</a></li>
+                <li><a href="">+11 (000) 111-11-11</a></li>
+            </ul>
+        </address>
+        
         <address>
             <ul class="list-nostyle info-list">
                 <li><a href="">info@devstudio.com</a></li>
@@ -60,9 +81,30 @@
                     <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                 </li>
             </ul>
+            <ul class="list-nostyle">
+                <li>
+                    <h2>Strategy</h2>
+                    <p>Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
+                </li>
+                <li>
+                    <h2>Punctuality</h2>
+                    <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                </li>
+                <li>
+                    <h2>Diligence</h2>
+                    <p>Research and confirm brands with the strongest digital growth opportunities and minimize risk.</p>
+                </li>
+                <li>
+                    <h2>Technologies</h2>
+                    <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                </li>
+            </ul>
         </section>
         <section>
             <h2>Our Team</h2>
+            <ul class="our-team list-nostyle">
+                <li class="team-card">
+                    <img class="team-img" src="images/img-3.jpg" alt="employee-1" width="264">
             <ul class="our-team list-nostyle">
                 <li class="team-card">
                     <img class="team-img" src="images/img-3.jpg" alt="employee-1" width="264">
@@ -71,8 +113,14 @@
                 </li>
                 <li class="team-card">
                     <img class="team-img" src="images/img-2.jpg" alt="employee-2" width="264">
+                </li>
+                <li class="team-card">
+                    <img class="team-img" src="images/img-2.jpg" alt="employee-2" width="264">
                     <h3>Tom Ford</h3>
                     <p>Frontend Developer</p>
+                </li>
+                <li class="team-card">
+                    <img class="team-img" src="images/img-1.jpg" alt="employee-3" width="264">
                 </li>
                 <li class="team-card">
                     <img class="team-img" src="images/img-1.jpg" alt="employee-3" width="264">
@@ -81,8 +129,74 @@
                 </li>
                 <li class="team-card">
                     <img class="team-img" src="images/img.jpg" alt="employee-4" width="264">
+                </li>
+                <li class="team-card">
+                    <img class="team-img" src="images/img.jpg" alt="employee-4" width="264">
                     <h3>Daniel Wilson</h3>
                     <p>UI Designer</p>
+                </li>
+            </ul>            
+        </section>
+        <section class="our-portfolio-section">
+            <h2>Our Portfolio</h2>
+            
+            <ul class="our-portfolio list-nostyle">
+<!--          <label>
+                <input type="checkbox" class="hidden-checkbox">
+-->
+                <li class="project-card">
+                    <img src="images/image-5.jpg" alt="banking-app" height="300" width="360">
+                    <h3>Banking App</h3>
+                    <p>App</p>
+                </li>
+<!--          </label>
+              <label>
+                <input type="checkbox" class="hidden-checkbox">
+-->
+                <li class="project-card">
+                    <img src="images/image-4.jpg" alt="cashless-payment" height="300" width="360">
+                    <h3>Cashless Payment</h3>
+                    <p>Marketing</p>
+                </li>
+<!--          </label>
+              <label>
+                <input type="checkbox" class="hidden-checkbox">
+-->
+                <li class="project-card">
+                    <img src="images/image-3.jpg" alt="meditation-app" height="300" width="360">
+                    <h3>Meditation App</h3>
+                    <p>App</p>
+                </li>
+<!--          </label>
+              <label>
+                <input type="checkbox" class="hidden-checkbox">
+-->
+                <li class="project-card">
+                    <img src="images/image-2.jpg" alt="taxi-service" height="300" width="360">
+                    <h3>Taxi Service</h3>
+                    <p>Marketing</p>
+                </li>
+<!--          </label>
+              <label>
+                <input type="checkbox" class="hidden-checkbox">
+-->
+                <li class="project-card">
+                    <img src="images/image-1.jpg" alt="screen-illustrations" height="300" width="360">
+                    <h3>Screen Illustrations</h3>
+                    <p>Design</p>
+                </li>
+<!--          </label>
+              <label>
+                <input type="checkbox" class="hidden-checkbox">
+-->
+                <li class="project-card">
+                    <img src="images/image.jpg" alt="online-courses" height="300" width="360">
+                    <h3>Online Courses</h3>
+                    <p>Marketing</p>
+                </li>
+<!--          </label>                -->
+            </ul>
+                   
                 </li>
             </ul>            
         </section>
@@ -156,3 +270,4 @@
     </footer>
 </body>
 </html>
+
