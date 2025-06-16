@@ -11,7 +11,8 @@
     --grey: rgba(46, 47, 66, 0.7);
     --dairy: #fcfcfc;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     color: var(--slate);
     font-family: 'Roboto';
@@ -20,14 +21,14 @@ body{
     line-height: 24px;
     letter-spacing: 2%;
 }
-footer{
+
+footer {
+    padding-top: 50px;
     height: 312px;
     background-color: var(--navy-blue);
 }
-footer>p{
-    color:white;
-}
-ul>li>a{
+
+ul>li>a {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
@@ -36,19 +37,22 @@ ul>li>a{
     color: var(--navy-blue);
 
 }
-h1{
-    font-family:'Roboto'; 
+
+h1 {
+    font-family: 'Roboto';
     font-weight: bold;
     font-size: 56px;
-    letter-spacing: 2%; 
-    line-height:60px;
+    letter-spacing: 2%;
+    line-height: 60px;
 }
-h2{
+
+h2 {
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 36px;
     letter-spacing: 2%;
 }
+
 h3 {
     font-family: 'Roboto';
     font-weight: bold;
@@ -56,12 +60,13 @@ h3 {
     letter-spacing: 2%;
 }
 
-button:hover{
-    background-color:var(--ocean);
+button:hover {
+    background-color: var(--ocean);
     color: white;
     border-radius: 4%;
 }
-button{
+
+button {
     background-color: var(--iris);
     color: white;
     border-radius: 4%;
@@ -75,7 +80,8 @@ button{
     line-height: 24px;
     letter-spacing: 4%;
 }
-a{
+
+a {
     font-family: 'Roboto';
     font-weight: regular;
     font-size: 12px;
@@ -83,34 +89,73 @@ a{
     letter-spacing: 4%;
     text-decoration: underline;
 }
+
+.bottom-logo {
+    display: block;
+}
+
+.footer-text {
+    color: white;
+    width: 264px;
+    height: 112px;
+}
+
+.vision {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.our-portfolio {
+    padding:50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.our-team {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.top-logo {
+    align-self: center;
+}
+
+.container {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 1158px;
+}
+
+.effective-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--navy-blue);
+    height: 600px;
+}
+
+.effective-section>section>h1 {
+    color: white;
+}
+
 .list-nostyle {
     list-style-type: none;
+}
 
-}
-.nav-list>li>a, .info-list>li>a{
-    color: var(--slate);
-    text-decoration: none;
-}
-.nav-list > li > a:hover, .info-list>li>a:hover{
-    color: var(--iris);
-    text-decoration: none;
-}
-.nav-list > li > a:active{
-    color: var(--iris);
-}
-.team-card{
-    border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-    width: 264px;
-    height: 428px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: var(--white);
-}
-.project-card{
-    width: 360px;
-    height: 420px;
-    background:white;
-}
 .nostyle-link {
     text-decoration: none;
 }
@@ -121,6 +166,54 @@ a{
 
 .nostyle-link:active {
     text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.our-team-section {
+    background-color: var(--cloud);
+}
+
+.info-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.nav-list>li>a,
+.info-list>li>a {
+    color: var(--slate);
+    text-decoration: none;
+}
+
+.nav-list>li>a:hover,
+.info-list>li>a:hover {
+    color: var(--iris);
+    text-decoration: none;
+}
+
+.nav-list>li>a:active {
+    color: var(--iris);
+}
+
+.team-card {
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    width: 264px;
+    height: 428px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: var(--white);
+}
+
+.project-card {
+    width: 360px;
+    height: 420px;
+    background: white;
 }
 
 #iris-web {
@@ -148,13 +241,6 @@ a{
     font-family: 'Raleway';
     font-weight: bold;
     color: #434455;
-}
-.effective-section{
-    background-color: var(--navy-blue);
-    height: 600px;
-}
-.effective-section>h1 {
-    color: white;
 }
 
 /*
