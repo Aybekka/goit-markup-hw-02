@@ -24,9 +24,6 @@ footer{
     height: 312px;
     background-color: var(--navy-blue);
 }
-footer>p{
-    color:white;
-}
 ul>li>a{
     font-family: var(--font-family);
     font-weight: 500;
@@ -83,9 +80,76 @@ a{
     letter-spacing: 4%;
     text-decoration: underline;
 }
+.bottom-logo{
+    display:block;
+}
+.footer-text{
+    color:white;
+    width: 264px;
+    height: 112px;
+}
+.vision{
+    display:flex;
+    justify-content:center;
+    gap:24px;
+}
+.our-portfolio{
+    display:flex;
+    justify-content:center;
+    gap:24px;
+}
+.our-team{
+    display:flex;
+    justify-content:center;
+    gap:24px;
+}
+.section-header{
+    text-align:center;
+}
+.header-section{
+    display:flex;
+    justify-content:space-between;
+}
+.top-logo{
+    align-self:center;
+}
+.container{
+    width:1158px;
+}
+.effective-section{
+    text-align:center;
+    background-color: var(--navy-blue);
+    height: 600px;
+}
+.effective-section>section>h1 {
+    color: white;
+}
 .list-nostyle {
     list-style-type: none;
+}
+.nostyle-link {
+    text-decoration: none;
+}
 
+.nostyle-link:hover {
+    text-decoration: none;
+}
+
+.nostyle-link:active {
+    text-decoration: none;
+}
+.nav-list{
+    display:flex;
+    justify-content:space-evenly;
+    gap:40px;
+}
+.our-team-section{
+    background-color:var(--cloud);
+}
+.info-list{
+    display:flex;
+    justify-content:space-evenly;
+    gap:30px;
 }
 .nav-list>li>a, .info-list>li>a{
     color: var(--slate);
@@ -99,6 +163,7 @@ a{
     color: var(--iris);
 }
 .team-card{
+    text-align:center;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     width: 264px;
@@ -111,18 +176,6 @@ a{
     height: 420px;
     background:white;
 }
-.nostyle-link {
-    text-decoration: none;
-}
-
-.nostyle-link:hover {
-    text-decoration: none;
-}
-
-.nostyle-link:active {
-    text-decoration: none;
-}
-
 #iris-web {
     font-size: 18px;
     line-height: 117%;
@@ -131,7 +184,6 @@ a{
     font-weight: bold;
     color: #4D5AE5;
 }
-
 #white-studio {
     font-size: 18px;
     line-height: 117%;
@@ -140,7 +192,6 @@ a{
     font-weight: bold;
     color: white;
 }
-
 #navy-studio {
     font-size: 18px;
     line-height: 117%;
@@ -148,13 +199,6 @@ a{
     font-family: 'Raleway';
     font-weight: bold;
     color: #434455;
-}
-.effective-section{
-    background-color: var(--navy-blue);
-    height: 600px;
-}
-.effective-section>h1 {
-    color: white;
 }
 
 /*
