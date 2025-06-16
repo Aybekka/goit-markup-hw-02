@@ -125,9 +125,11 @@ a {
 }
 
 .header-section {
+    margin: 0 auto;
+    width: 1158px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items:flex-start;
 }
 
 .top-logo {
@@ -207,16 +209,22 @@ a {
     width: 264px;
     height: 428px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: var(--white);
+    background:white;
 }
 
 .project-card {
+    width: 360px;
+    height: 420px;
+    background: white;
+}
+.project-card .img-disp{
+    display: flex;
+}
+.project-card .text-section{
+    padding-top: 10px;
     border-bottom: 2px solid #E7E9FC;
     border-left: 2px solid #E7E9FC;
     border-right: 2px solid #E7E9FC;
-    width: 364px;
-    height: 420px;
-    background: white;
 }
 
 #iris-web {
