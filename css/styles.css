@@ -211,6 +211,9 @@ a {
 }
 
 .project-card {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
     width: 360px;
     height: 420px;
     background: white;
