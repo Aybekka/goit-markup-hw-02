@@ -122,6 +122,8 @@ a {
 }
 .footer-icon-list{
     display: flex;
+    position: absolute;
+    translate: -50px -80px;
     width: 264px;
     height: 40px;
     justify-content: space-evenly;
