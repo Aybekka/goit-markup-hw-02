@@ -105,7 +105,7 @@ a {
 }
 .team-icons{
     display: flex;
-    width: 232px;
+    width: 264px;
     height: 40px;
     justify-content: space-evenly;
 }
@@ -132,6 +132,15 @@ a {
 }
 .footer-icon:hover{
     background-color: var(--green);
+}
+.team-icon{
+    transition: background-color 250ms cubic-bezier(0.4,
+        0,
+        0.2,
+        1);
+}
+.team-icon:hover{
+    background-color: var(--ocean);
 }
 .icon-sm{
     height: 16px;
@@ -233,6 +242,7 @@ header{
 }
 
 .nav-list {
+    margin-left: -200px;
     display: flex;
     justify-content: space-evenly;
     gap: 40px;
@@ -277,15 +287,16 @@ header{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background:white;
 }
-.team-card:hover .elipse{
-    background-color: var(--ocean);
-}
-
 .project-card {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 360px;
     height: 420px;
     background: white;
+}
+.overlay>p{
+    margin: 40px auto;
+    width: 296px;
+    color: var(--cloud);
 }
 .project-card:hover{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -302,6 +313,7 @@ header{
     overflow: hidden;
 }
 .overlay {
+    justify-content: center;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--iris);
     position: absolute;
@@ -342,17 +354,3 @@ header{
     font-weight: bold;
     color: #434455;
 }
-
-/*
-Biraz labellarla uğraşıyordum ama validator hata verdi yine de burada bırakmak istedim
-
-.hidden-checkbox{
-    display: none;
-}
-.hidden-checkbox:checked + .project-card{
-    width: 360px;
-    height: 420px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background:white;
-}
-*/
