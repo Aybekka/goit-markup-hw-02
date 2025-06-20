@@ -142,9 +142,6 @@ a {
     height: 64px;
     width: 64px;
 }
-.bottom-logo {
-    display: block;
-}
 
 .footer-text {
     color: white;
@@ -204,7 +201,7 @@ header{
 .effective-image{
     position: absolute;
     z-index: -1;
-    background-image:url(/images/people-office.png);
+    background-image:url(../images/people-office.png);
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -265,10 +262,10 @@ header{
     color: var(--iris);
     text-decoration: none;
 }
-.nav-list>li>a:active::after {
+.underline::after {
     content: "";
     position: absolute;
-    translate: -50px 0;
+    translate: -45px 0;
     bottom: -2px;
     width: 48px;
     height: 4px;
