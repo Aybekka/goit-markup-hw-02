@@ -10,8 +10,21 @@
     --navy-blue-modal: rgba(46, 47, 66, 0.4);
     --grey: rgba(46, 47, 66, 0.7);
     --dairy: #fcfcfc;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;     
 }
+.terms:active{
+    border-radius: 2px;
+        fill: var(--ocean);
+        border: 1px solid var(--ocean);
+}
+.modal{
+    display: none;
 
+}
+.is-open{
+    display: flex;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--slate);
@@ -21,7 +34,44 @@ body {
     line-height: 24px;
     letter-spacing: 2%;
 }
-
+.sub-button{
+    border-radius: 4px;
+        padding: 8px 24px;
+        width: 165px;
+        height: 40px;
+        background: var(--iris)
+}
+.sub-group{
+    display: flex;
+    gap: 24px;
+}
+.sub-icon{
+    fill: white;
+    margin-left: 16px;
+    width: 24px;
+    height: 20px;
+}
+.subscribe-section{
+    width: 453px;
+        height: 80px;
+}
+.footer-input{
+    border: 1px solid white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: var(--navy-blue);
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+}
+.footer-input::placeholder{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 200%;
+        letter-spacing: 0.04em;
+        color:white;
+        padding-left: 16px;
+}
 footer {
     padding-top: 50px;
     height: 312px;
@@ -66,7 +116,6 @@ h3 {
 button:hover {
     background-color: var(--ocean);
     color: white;
-    border-radius: 4%;
 }
 
 button {
@@ -84,7 +133,95 @@ button {
     line-height: 24px;
     letter-spacing: 4%;
 }
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 1rem 0;
+}
+.exit-button{
+    margin-top: 24px;
+    margin-right: 24px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--cornflower);
+    width: 24px;
+    height: 24px;
+}
+.exit-button:hover .close-icon{
+    fill: white;
+}
+.input-label {
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        color: var(--light-slate);
+    width: 360px;
+    height: 58px;
+}
+.chekbox-label{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        color: var(--light-slate);
+}
+.label-a{
+    line-height: 133%;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: var(--iris);
+}
+.input-wrapper {
+    margin-bottom: 8px; ;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
+.modal-icon{
+    position: absolute;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    fill: var(--navy-blue);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-icon-filler{
+    fill: var(--slate);
+}
+.chekbox-input{
+    display: block;
+
+}
+.modal-button{
+    margin-top: 24px;
+    align-self: center;
+}
+.input-icon {
+    padding-left: 36px;
+    width: 100%;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid var(--navy-blue-modal);
+    font-size: 14px;
+    outline: none;
+}
+.input-textarea {
+    height: 120px;
+}
+.input-icon:focus {
+    border-color: var(--iris);
+}
+.input-icon:focus .modal-icon{
+    fill: var(--iris);
+}
 a {
     font-family: 'Roboto';
     font-weight: regular;
@@ -92,6 +229,35 @@ a {
     line-height: 16px;
     letter-spacing: 4%;
     text-decoration: underline;
+}
+.modal-main>p{font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+}
+.modal-main{
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto 0 auto;
+    width: 408px;
+    height: 616px;
+    border-radius: 4px;
+    background-color:var(--dairy);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-background{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 1000px;
+    background-color:var(--navy-blue-modal);
 }
 .icon-background{
     display: flex;
@@ -146,6 +312,12 @@ a {
     height: 16px;
     width: 16px;
 }
+.close-icon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 8px;
+    height: 8px;
+    fill: var(--navy-blue);
+}
 .icon{
     height: 64px;
     width: 64px;
@@ -183,8 +355,9 @@ a {
     text-align: center;
 }
 header{
-    z-index: 999;
+    z-index: 2;
     position: fixed;
+    top: 0;
     background-color: white;
     width: 100%;
 }

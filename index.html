@@ -16,6 +16,62 @@
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal-background">
+            <div class="modal-main">
+                <button class="exit-button">
+                    <svg class="close-icon icon-close">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+        
+                <p>Leave your contacts and we will call you back</p>
+                <div class="input-group">
+                    <form>
+                        <label class="input-label">Name
+                            <div class="input-wrapper">
+                                <svg class="modal-icon icon-name">
+                                    <use href="./images/icons.svg#icon-name"></use>
+                                </svg>
+                                <input type="text" class="input-icon" />
+                            </div>
+                        </label>
+                        <label class="input-label">Phone
+                            <div class="input-wrapper">
+                                <svg class="modal-icon icon-phone">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>
+                                <input type="tel" class="input-icon" />
+                            </div>
+                        </label>
+                        <label class="input-label">Email
+                            <div class="input-wrapper">
+                                <svg class="modal-icon icon-mail">
+                                    <use href="./images/icons.svg#icon-mail"></use>
+                                </svg>
+                                <input type="email" class="input-icon" />
+                            </div>
+                        </label>
+                        <label class="input-label">Comment
+                            <textarea rows="5" placeholder="Text input" class="input-textarea input-icon"></textarea>
+                        </label>
+        
+                    </form>
+                    <form class="checkbox-input">
+                        <input class="terms" type="checkbox" name="terms" id="terms">
+                        <label>
+                            <span class="checkbox-label">I accept the terms and conditions of the <a href=""
+                                    class="label-a">Privacy Policy</a></span></label>
+                    </form>
+                    <button class="modal-button">Send</button>
+                </div>
+        
+        
+            </div>
+            </div>
+
+    </div>
+    
     <header>
         <div class="header-section">
             <a href="" class="nostyle-link top-logo "><span id="iris-web">WEB</span><span
@@ -324,6 +380,18 @@
                             </svg>
                         </a>
                     </div>
+                </li>
+                <li class="subscribe-section">
+                    <p class="footer-text social-header">Subscribe</p>
+                    <form class="sub-group">
+                        <input class="footer-input" type="email" placeholder="E-mail">
+                        <button class="sub-button" type="submit">
+                            Subscribe
+                            <svg class="sub-icon icon-send">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </li>
             </ul>
         </section>
