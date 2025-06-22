@@ -70,6 +70,7 @@ body {
         height: 80px;
 }
 .footer-input{
+    color: var(--cloud);
     border: 1px solid white;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: var(--navy-blue);
