@@ -24,6 +24,12 @@
 }
 .is-open{
     display: flex;
+    z-index: 5;
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+        height: 1000px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -35,9 +41,15 @@ body {
     letter-spacing: 2%;
 }
 .sub-button{
+    font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        color:white;
     border-radius: 4px;
         padding: 8px 24px;
-        width: 165px;
+        width: 173px;
         height: 40px;
         background: var(--iris)
 }
@@ -47,6 +59,8 @@ body {
 }
 .sub-icon{
     fill: white;
+    justify-self: center;
+    align-self: center;
     margin-left: 16px;
     width: 24px;
     height: 20px;
@@ -214,13 +228,15 @@ button {
     outline: none;
 }
 .input-textarea {
+    padding:0px;
     height: 120px;
 }
 .input-icon:focus {
     border-color: var(--iris);
 }
-.input-icon:focus .modal-icon{
+.input-wrapper:has(input:focus) svg {
     fill: var(--iris);
+    
 }
 a {
     font-family: 'Roboto';
@@ -230,7 +246,8 @@ a {
     letter-spacing: 4%;
     text-decoration: underline;
 }
-.modal-main>p{font-family: var(--font-family);
+.modal-main>p{
+    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -243,7 +260,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 80px auto 0 auto;
+    justify-content: center;
+    margin: 160px auto;
     width: 408px;
     height: 616px;
     border-radius: 4px;
